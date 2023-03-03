@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulte Dolar</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="fundoDolar">
+
+    <div class="valoresAtuais">
+        
+        <div>
+            <label for="number"></label>
+            <input type="number" id="dolar" readonly>
+        </div>
+
+        <div>
+            <label for="number"></label>
+            <input type="number" id="euro" readonly>
+        </div>
+
+        <div>
+            <label for="number"></label>
+            <input type="number" id="bitcoins" readonly>
+        </div>
+    </div>
+
+     <section class='conteudos'>
+        <div class="form-box">
+            <div class="form-value">
+                <form action="">
+                    <h2 class="tituloDolar">CONVERÇÃO MOEDA</h2>
+                    <div class="inputbox">
+                        <input 
+                            type="number"
+                            name="valorEmReal"
+                            id="valorEmReal"
+                            class="valorEmReal"
+                            step='0.01'
+                            min='0.00'
+                            max='9999999999.99'
+                            value=''
+                            tabindex="1"
+                            onClick='ativarBotao()'
+                            onChange='ativarBotao()'
+                            autofocus
+                            required>
+                        <label for="valorEmReal">Digite um valor R$</label>
+                    </div>
+
+                    <div class="form-group">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input 
+                        type="radio"
+                        id='dolar'
+                        name="moedaEstrangeira"
+                        value='Dólar'
+                        tabindex="2" 
+                        required>
+                        <label for="dolar">Dólar</label>
+
+                        <input
+                        type="radio"
+                        id='euro'
+                        name="moedaEstrangeira"
+                        class="input radio"
+                        value='Euro'
+                        tabindex="3"
+                        /> <label for="euro">Euro</label>
+
+                        <input
+                        type="radio"
+                        id='bitcoins'
+                        name="moedaEstrangeira"
+                        class="input radio"
+                        value='Bitcoins'
+                        tabindex="5"
+                        /> <label for="bitcoins">Bitcoins</label>
+        
+                    </div>
+
+                </form>
+
+                    <div class="form-group">
+                        <button class='desativado botao' id='btnConverter'
+                        onClick='ativarBotao(); bloquearBotao()'>Converter</button>
+                        <button type="reset" class='botao' id='btnLimpar' tabindex="7">Limpar</button>
+                    </div>
+                
+                    <div class="register">
+                        <p>Deseja voltar ao <a href="index.html">Ínicio</a></p>
+                    </div>
+            </div>
+        </div>
+        
+        <div class="instrucoes">
+            <p class='centro' id='aviso'>Digite o valor, escolha a moeda e converter</p>
+        </div>
+    </section>
+
+    <script src="scriptDolar.js"></script>
+</body>
+
+</html>

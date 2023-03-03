@@ -1,0 +1,504 @@
+* {
+    box-sizing: border-box ;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: OCR A Std, monospace;
+}
+
+/* Butão index*/
+.butao-index {
+    width: 160px;
+    background: #0ea8a8;
+    color: white;
+    text-transform: uppercase;
+    margin: 3rem;
+    display: block;
+    border: none;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    /* border: 1px solid green; */
+}
+
+.localButao {
+    margin-top: 11.5rem;
+    margin-left: 50rem;
+    /* border: 1px solid green; */
+}
+
+.localButao, a {
+    text-decoration: none;
+}
+
+.logo {
+    height: 75px;
+    width: auto;
+}
+
+.tituloInicio {
+    margin-top: 18rem;
+    margin-left: 10rem;
+    text-align: center;
+    /* border: 1px solid green; */
+}
+
+.editandoFonte {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* Topo do Site */
+#topoSite {
+    display: flex;
+    background-color: #17638fa4;
+    color: white;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+#topoSite .topoSite-container {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+#topoSite .topoSite-container ul {
+    display: flex;
+    list-style: none;
+    font-weight: bold;   
+}
+#topoSite .topoSite-container ul li {
+    padding: 0 10px;
+} 
+#topoSite .topoSite-container ul li:nth-child(-n + 4) {
+    border-right: 1px solid rgb(255, 255, 255);
+}
+
+
+/* Fundo index */
+#fundoIndex {
+    height: 100vh;
+    display: flex;
+    color: white;
+    background: url('https://images.vexels.com/content/71402/preview/blue-tech-fluorescent-financial-chart-background-39f125.png') center center/cover;
+    background-color: rgba( 0,0,0,0.10 );
+    background-blend-mode: color;
+    /*border: 1px solid green;*/
+    
+}
+#fundoIndex .fundoIndex-container {
+    height: 150px;
+    width: 750px;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    /* margin: 118px; */
+    /*border: 1px solid green*/
+}
+#fundoIndex .fundoIndex-container h2 {
+    font-size: 4.3rem;
+    /*border: 1px solid green;*/
+}
+#fundoIndex .fundoIndex-container p {
+    margin-top: 5px;
+    font-size: 1.7rem;
+    /*border: 1px solid green;*/
+}
+
+
+/* Página (Consulte - CEP) */
+
+#fundoCEP {
+    /* background-image: linear-gradient(to right, rgb(17, 54, 71), rgba(0, 0, 255, 0.879)); */
+    background: url('https://e1.pxfuel.com/desktop-wallpaper/935/785/desktop-wallpaper-world-map-for-windows-as-world-map-for-windows-world-map.jpg') center center/cover;
+    background-repeat: no-repeat;
+    background-repeat: repeat;
+    background-position: center;
+    background-position: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-clip: content-box;
+    background-blend-mode: darken;
+}
+
+#topoSiteCep {
+    display: flex;
+    background-color: #d1d7dd14;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#topoSiteCep .topoSiteCep-container {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+#topoSiteCep .topoSiteCep-container ul {
+    display: flex;
+    list-style: none;
+    font-weight: bold;   
+}
+#topoSiteCep .topoSiteCep-container ul li {
+    padding: 0 10px;
+} 
+#topoSiteCep .topoSiteCep-container ul li:nth-child(-n + 4) {
+    border-right: 1px solid rgb(255, 255, 255);
+}
+
+a {
+    color: white;
+}
+
+
+/* Design FORMULÁrio */
+
+.box{
+    color: white;
+    position: relative;
+    top: 58%;
+    left: 50%;
+    transform: translate(-45%,40%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 15px;
+    width: 20%;
+}
+fieldset{
+    border: 3px solid dodgerblue;
+    padding: 7px;
+}
+legend{
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+    background-color: dodgerblue;
+    border-radius: 8px;
+}
+.inputBox{
+    position: relative;
+}
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+.labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top: -20px;
+    font-size: 12px;
+    color: dodgerblue;
+}
+#data_nascimento{
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+#submit{
+    background-image: linear-gradient(to right,rgb(0, 92, 197), rgb(90, 20, 220));
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#submit:hover{
+    background-image: linear-gradient(to right,rgb(0, 80, 172), rgb(80, 19, 195));
+}
+
+/* Front página Dolar */
+
+#fundoDolar {
+    /* background-image: linear-gradient(to right, rgb(17, 54, 71), rgba(0, 0, 255, 0.879)); */
+    background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5V7T2O1WgGVW0hs2C4qzD3NBKxXPXOb0slOM0PebLURCssRqEkL5N3Kdodl1CKOpFoFHn0gVmfzxm6eILsWWT3Drt7yldm8IrwDe05TlcFa5mhiXUi6u7mrCgzFWi-I4DZUQfguc3D2rbGTp5BBwxdc4L4dggbvdadvg7G8OaOd2eAS4ZPTYpoMtyoA/d/v2-MINIMALIST-LANDSCAPE-SUN-4k.png') center center/cover;
+    background-repeat: no-repeat;
+    background-repeat: repeat;
+    background-position: center;
+    background-position: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-clip: content-box;
+    background-blend-mode: darken;
+}
+
+section {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    margin-bottom: 0.625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    background: url('background6.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.instrucoes {
+    max-width: 480px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    border: 1px solid #eee;
+    border-radius: 18px;
+    padding: 0 0.625rem 0.625rem;
+    background: #fff;
+}
+
+.instrucoes p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+
+.centro {
+    margin-top: 0.625rem;
+    text-align: center;
+}
+
+label:first-child {
+    font-size: 1.75rem;
+    margin-right: 0.5rem;
+
+}
+
+.input {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 0.625rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.radio {
+    border: 1px solid #d50000;
+    margin-left: 3.7rem;
+}
+
+.botao {
+    margin-top: 0.625rem;
+    padding: 8px;
+}
+
+.form-group, label {
+    color: white;
+}
+
+#btnLimpar {
+    cursor: pointer;
+    color: #fff;
+    background: #d50000;
+}
+
+#btnConverter {
+    cursor: not-allowed;
+}
+
+#btnConverter:hover, #btnLimpar:hover {
+    box-shadow: 0px 0px 4px rgb(255, 255, 255);
+}
+
+/* Paragrafo com ID aviso */
+#aviso {
+    padding: 5px;
+    color: #191919;
+}
+
+
+/* Animar o input */
+@keyframes piscar {
+    0% {
+        /* box-shadow: 0 0 25px #ffc107; */
+        filter: drop-shadow(0 0 25px dodgerblue);
+        -webkit-filter: drop-shadow(0 0 25px dodgerblue);
+        -moz-filter: drop-shadow(0 0 25px dodgerblue);
+        -o-filter: drop-shadow(0 0 25px dodgerblue);
+        -ms-filter: drop-shadow(0 0 25px dodgerblue);
+    }
+    100% {
+    }
+}
+
+@keyframes aparecer {
+    to {
+        opacity: 0; 
+    }
+    from {
+        opacity: 1; 
+    }
+}
+
+.animar {
+    animation: piscar 1s infinite alternate;
+}
+
+.aparecer {
+    animation: aparecer 1.5s ease-in;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+
+.form-box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.valoresAtuais {
+    width: 190px;
+    height: 120px;
+    margin-left: 40rem;
+    margin-top: 2rem;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.valoresAtuais, input {
+    color: white;
+    background: none;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 18px;
+    text-align: center;
+}
+
+h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+
+.tituloDolar {
+    font-family: Andale Mono, monospace;
+}
+
+.inputbox{
+    position: relative;
+    margin: 30px 0px;
+    margin-top: 3rem;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+input:focus ~ label,
+input:valid ~ label{
+top: -5px;
+}
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: #fff;
+}
+.inputbox ion-icon{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 20px;
+}
+.forget{
+    margin: -15px 0 15px ;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;  
+}
+
+.forget label input{
+    margin-right: 3px;
+    
+}
+.forget label a{
+    color: #fff;
+    text-decoration: none;
+}
+.forget label a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+.register{
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.register p a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.register p a:hover{
+    text-decoration: underline;
+}
+
+

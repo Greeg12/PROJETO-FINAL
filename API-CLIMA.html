@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo - Mogi das Cruzes</title>
+
+    <link rel="stylesheet" href="styleClima.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    
+    <div class="wrapper fadeInDown">
+  
+        <div class="content-login">
+            <h2 class="active"> - Previsão do Tempo - </h2>
+            <h3 class="active">Pesquise a Cidade</h3>
+            <form class="box-login" method="post" action="#">
+              <input type="text" id="cidade" class="campo" placeholder="Pesquise Cidade">
+              <p id="temperatura">Carregando...</p><br>
+              <input type="button" class="botao" value="Pesquisar" onclick="getWeather()">
+            </form>
+            <div class="box-lembrar-senha">  
+              <a class="link" href="index.html">Agora sai filhão</a>
+        </div>
+        </div>
+    </div>
+    
+</body>
+
+    <script src="scriptClima.js"></script>
+</html>

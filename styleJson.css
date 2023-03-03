@@ -1,0 +1,81 @@
+* {
+    margin: 0 auto;
+    font-family: Snell Roundhand, cursive;
+}
+
+body {
+    background-image: url('https://wallpapercave.com/wp/wp9321732.jpg');
+    background-repeat: no-repeat;
+    background-repeat: repeat;
+    background-position: center;
+    background-position: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-clip: content-box;
+    background-blend-mode: darken;
+}
+
+.tituloSite {
+    text-align: center;
+    margin-top: 8rem;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.subTitulo {
+    text-align: center;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.container {
+    width: 1000px;
+    display: flex;
+    margin-top: 9rem;
+    margin-left: 22rem;
+    /* border: 1px solid green; */
+}
+
+.container, div, img {
+    border-radius: 18px;
+}
+
+.container1 {
+    background-color: rgba(240, 248, 255, 0.699);
+    border-radius: 18px;
+    text-align: center;
+    margin-top: 1.5rem;
+    /* border: 1px solid green; */
+}
+
+.container2 {
+    background-color: rgba(240, 248, 255, 0.699);
+    border-radius: 18px;
+    text-align: center;
+    margin-top: 1.5rem;
+    /* border: 1px solid green; */
+}
+
+.container3 {
+    background-color: rgba(240, 248, 255, 0.699);
+    border-radius: 18px;
+    text-align: center;
+    margin-top: 1.5rem;
+    /* border: 1px solid green; */
+}
+
+.editButton {
+    width: 100px;
+    background: #1388C1;
+    border: none;
+    border-radius: 0.5rem;
+    margin: 5px;
+}
+
+.boxCompra {
+    margin-left: 5rem;
+    padding: 1rem;
+    background-color: rgba(240, 248, 255, 0.699);
+    /* border: 1px solid green; */
+}
+

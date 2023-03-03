@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulte - CEP</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="fundoCEP">
+
+    <navbar id="topoSiteCep"> 
+        <div class="topoSiteCep-container">
+            <a href="index.html"><img src="imagens/logo2.png" alt="" class="logo"/></a>
+            <ul class="topoSiteCep-items"> 
+                <a href="dolar.html"><li class="topoSite-item">Colsulte Dolar</li></a>
+                <a href="cep.html"><li class="topoSite-item">Consulte CEP</li></a>
+                <a href="API-FAKE.html"><li class="topoSite-item">API-FAKE</li></a>
+                <a href="API-CLIMA.html"><li class="topoSite-item">API-CLIMA</li></a>
+                <a href="API-JSON.html"><li class="topoSite-item">API-JSON</li></a>
+                <a href="API-FORMS.html"><li class="topoSite-item">API-FORMS</li></a>
+            </ul>
+        </div>
+    </navbar>
+    
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend><b>Fórmulário de Clientes</b></legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="cep" id="cep" class="inputUser" required>
+                    <label for="cep" class="labelInput">CEP</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="rua" id="rua" class="inputUser" required>
+                    <label for="rua" class="labelInput">Rua</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="tel" name="numeroCasa" id="numero" class="inputUser" required>
+                    <label for="numeroCasa" class="labelInput">Número</label>
+                </div>
+
+                <br><br>
+                
+                <div class="inputBox">
+                    <input type="text" name="nomeBairro" id="bairro" class="inputUser" required>
+                    <label for="nomeBairro" class="labelInput">Bairro</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="cidade" id="cidade" class="inputUser" required>
+                    <label for="cidade" class="labelInput">Cidade</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="estado" id="estado" class="inputUser" required>
+                    <label for="estado" class="labelInput">Estado</label>
+                </div>
+                <br><br>
+                <input type="submit" name="submit" id="submit">
+            </fieldset>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

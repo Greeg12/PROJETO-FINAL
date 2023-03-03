@@ -1,0 +1,26 @@
+{
+    "trap": {
+    "name": "Orochi",
+    "album": "Celebridade",
+    "style": "Trap",
+    "price": "R$ 50,22",
+    "image": "<img src='imagens/orochi.jpg' width='250px' height='250px'>"
+    },
+
+    "samba": {
+    "name": "Barões da Pisadinha",
+    "album": "Pisadinha",
+    "style": "Pisada",
+    "price": "R$ 29,90",
+    "image": "<img src='imagens/baroes.jpg' width='250px' height='250px'>"
+    },
+
+    "pagode": {
+    "name": "Turma do Pagode",
+    "album": "Pagodinho",
+    "style": "Pagode",
+    "price": "R$ 39,99",
+    "image": "<img src='imagens/pagode.jpg' width='250px' height='250px'>"
+    }
+
+}

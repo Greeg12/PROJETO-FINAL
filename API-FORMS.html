@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cosumindo - API</title>
+
+    <link rel="stylesheet" href="styleForms.css" />
+  </head>
+
+  <body>
+
+    <div class="box" id="blockForm">
+      <form action="">
+          <fieldset>
+              <legend><b>Fórmulário de Clientes</b></legend>
+              <br>
+              <div class="inputBox">
+                  <input type="text" name="nome" id="nome" class="inputUser" required>
+                  <label for="nome" class="labelInput">NOME</label>
+              </div>
+              <br><br>
+              <div class="inputBox">
+                  <input type="text" name="sobrenome" id="sobrenome" class="inputUser" required>
+                  <label for="sobrenome" class="labelInput">SOBRENOME</label>
+              </div>
+              <br><br>
+              <div class="inputBox">
+                  <input type="tel" name="idade" id="idade" class="inputUser" required>
+                  <label for="idade" class="labelInput">IDADE</label>
+              </div>
+
+              <br><br>
+              
+              <div class="inputBox">
+                  <input type="text" name="cpf" id="cpf" class="inputUser" required>
+                  <label for="cpf" class="labelInput">CPF</label>
+              </div>
+              <br><br>
+              <div class="inputBox">
+                  <input type="text" name="telefone" id="telefone" class="inputUser" required>
+                  <label for="telefone" class="labelInput">TELEFONE</label>
+              </div>
+              <br><br>
+              <div class="inputBox">
+                  <input type="text" name="cep" id="cep" class="inputUser" required>
+                  <label for="cep" class="labelInput">CEP</label>
+              </div>
+              <br><br>
+              <input type="button" name="submit" id="submit" value="Enviar" onclick="guardaFormulario()">
+          </fieldset>
+      </form>
+
+  </div>
+
+    <div class="textoDados"><b>Dados dos clientes</b></div>
+
+    <div id="informacaoForm">
+      <div id="jsonForm0"></div>
+
+      <div id="jsonForm1"></div>
+
+      <div id="jsonForm2"></div>
+
+      <div id="jsonForm3"></div>
+
+      <div id="jsonForm4"></div>
+
+      <div id="jsonForm5"></div>
+    </div>
+
+    <script src="scriptForms.js"></script>
+  </body>
+</html>
